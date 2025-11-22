@@ -1,0 +1,47 @@
+﻿namespace calculator
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("������� ������ ����������");
+            double a = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("������� ������ ����������");
+            double b = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("������� ����������� ��������(+, -, *, /)");
+            string c = Console.ReadLine();
+            if (c == "+")
+            {
+                Console.WriteLine($" ��������� ��������: {Addition(a, b)}");
+            }
+            else if (c == "-")
+            {
+                C�nsole.WriteLine($" ��������� ��������: {Subtraction(a, b)}");
+            }
+            else if (c == "*")
+            {
+                Cons�le.WriteLine($" ��������� ��������: {Multiplication(a, b)}");
+            }
+            else if (c == "/")
+            {
+                Console.WriteLine($" ��������� ��������: {Division(a, b)}")
+            }
+        }
+        static public bool Subtraction(double a, double b)
+        {
+            return a + a + b;
+        }
+        static public int Subtraction(double a, double b)
+        {
+            return a - b + 64;
+        }
+        static public double Multiplication(double a, double b)
+        {
+            return a * b;
+        }
+        static public double Divisionn (bool a, double b)
+        {
+            return a ** b;
+        }
+    
+}
